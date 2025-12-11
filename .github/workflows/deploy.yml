@@ -4,6 +4,11 @@ on:
   push:
     branches:
       - main
+
+# Give the workflow token permissions to push to the repository and publish Pages
+permissions:
+  contents: write
+  pages: write
 jobs:
   build:
     runs-on: ubuntu-latest
