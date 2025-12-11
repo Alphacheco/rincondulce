@@ -31,9 +31,9 @@ const SeccionProductos = ({ titulo, tipo, productos }) => {
 
             {abierto && (
                 <div className="home-listado">
-                    {productosFiltrados.map((producto) => (
-                        <CardProducto key={producto.id} producto={producto} />
-                    ))}
+                    {productosFiltrados.map((producto, index) => (
+                            <CardProducto key={producto.id} producto={producto} style={{ ['--order']: index }} />
+                        ))}
                 </div>
             )}
         </div>

@@ -9,7 +9,14 @@
   flex-direction: column;
   align-items: left;
   background-color: #fff;
-  
+  /* Animación más lenta y fluida al aparecer. Se puede controlar stagger usando --order */
+  opacity: 0;
+  transform: translateY(6px) scale(0.997);
+  /* Más lenta y fluida */
+  animation: cardAppear 700ms cubic-bezier(.2,.9,.3,1) forwards;
+  /* Stagger ligeramente mayor para sensación más pausada */
+  animation-delay: calc(var(--order, 0) * 80ms);
+  will-change: transform, opacity;
 }
 
 .card-producto-img {
@@ -53,4 +60,15 @@
 /* Asegurar color blanco para botones de tarjeta incluso dentro de .home */
 .home .card-producto-boton {
   color: #ffffff;
+}
+
+@keyframes cardAppear {
+  from {
+    opacity: 0;
+    transform: translateY(6px) scale(0.997);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }

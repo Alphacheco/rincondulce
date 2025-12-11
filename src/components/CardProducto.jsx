@@ -2,11 +2,11 @@ import React from "react";
 import { useCarrito } from "../context/CarritoContext";
 import './CardProducto.css';
 
-const CardProducto = ({ producto }) => {
+const CardProducto = ({ producto, style }) => {
     const { agregarProducto } = useCarrito();
 
     return (
-        <div className="card-producto">
+        <div className="card-producto" style={style}>
             <img src={producto.imagen} alt={producto.nombre} className="card-producto-img" />
             <h3 className="card-producto-nombre">{producto.nombre}</h3>
             <p className="card-producto-descripcion">{producto.descripcion}</p>
