@@ -1,0 +1,71 @@
+.App {
+  font-family: Arial, sans-serif;
+
+  min-height: 100vh;
+
+  background:
+    /* patrones arriba */
+    radial-gradient(#B988B8 0.8px, transparent 0.8px),
+    radial-gradient(#B988B880 0.8px, transparent 0.8px),
+    /* degradado abajo */
+    linear-gradient(to bottom, #B988B8, #ffffff);
+
+  background-size:
+    30px 30px,
+    30px 30px,
+    cover;
+
+  background-position:
+    0 0,
+    15px 15px,
+    0 0;
+}
+
+
+
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  height: auto;
+}
+
+.inicioCheckout {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 1.5rem;
+  
+}
+
+
+.inicioCheckout a{
+  text-decoration: none;
+  color: #B988B8;
+  background-color: #FFE5FE;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 16px 16px;
+  border-radius: 50px;
+
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #B988B8;
+  padding: 10px 20px;
+}
+
+@media (max-width: 500px) {
+  .logo {
+    width: 100%;
+    max-width: 360px;
+  }
+  
+}

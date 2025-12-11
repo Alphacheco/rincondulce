@@ -1,0 +1,26 @@
+.home {
+  padding: 10px;
+}
+
+.home-titulo {
+  font-family: "Pacifico", cursive;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #B988B8;
+  text-decoration: double;
+  background-color: #FFE5FE;
+  width: fit-content;
+  margin: auto;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.home-listado {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
