@@ -2,6 +2,16 @@
   padding: 10px;
 }
 
+.button{
+  color: #B988B8;
+}
+
+/* Aplicar color a botones dentro de .home */
+.home button,
+.home .button {
+  color: #B988B8;
+}
+
 .home-titulo {
   font-family: "Pacifico", cursive;
   font-size: 24px;

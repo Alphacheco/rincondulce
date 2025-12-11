@@ -49,3 +49,8 @@
 .card-producto-boton:hover {
   background-color: #555;
 }
+
+/* Asegurar color blanco para botones de tarjeta incluso dentro de .home */
+.home .card-producto-boton {
+  color: #ffffff;
+}

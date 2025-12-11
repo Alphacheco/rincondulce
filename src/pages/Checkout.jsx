@@ -12,9 +12,10 @@ const Checkout = () => {
         direccion: ""
     });
 
-    // Inicializar EmailJS UNA SOLA VEZ
+    // Inicializar EmailJS UNA SOLA VEZ. Usar variable de entorno con fallback.
     useEffect(() => {
-        emailjs.init({ publicKey: "_I8lhC4mx5FA32RTo" });
+        const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "_I8lhC4mx5FA32RTo";
+        emailjs.init({ publicKey });
     }, []);
 
     const handleChange = (e) => {
@@ -47,12 +48,10 @@ const Checkout = () => {
             total: total
         };
 
-        emailjs
-            .send(
-                "service_rincondulce",
-                "template_pedidorincondul",
-                templateParams
-            )
+        const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID || "service_rincondulce";
+        const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "template_pedidorincondul";
+
+        emailjs.send(serviceId, templateId, templateParams)
             .then(() => {
                 alert("Pedido enviado correctamente!");
                 limpiarCarrito();
