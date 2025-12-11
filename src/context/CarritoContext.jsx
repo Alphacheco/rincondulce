@@ -6,6 +6,7 @@ export const CarritoProvider = ({ children }) => {
     const [items, setItems] = useState([]);
 
     const agregarProducto = (producto) => {
+        console.log('agregarProducto called with', producto);
         setItems(prev => {
             const existe = prev.find(item => item.id === producto.id);
             if (existe) {

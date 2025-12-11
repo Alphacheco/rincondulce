@@ -1,7 +1,7 @@
 const productos = [
     {
         id: 1,
-        nombre: "Blanco",
+        nombre: "Alfajor Blanco",
         precio: 1400,
         descripcion: "Alfajor relleno de dulce de leche y corazon de crema de mani, cubierto de baño de reposteria de chocolate blanco",
         imagen: "https://via.placeholder.com/150",
@@ -9,7 +9,7 @@ const productos = [
     },
     {
         id: 2,
-        nombre: "Negro",
+        nombre: "Alfajor Negro",
         precio: 1400,
         descripcion: "Alfajor relleno con dulce de leche y nueces cubierto de baño de reposteria de chocolate semi amargo",
         imagen: "https://via.placeholder.com/150",
@@ -17,7 +17,7 @@ const productos = [
     },
     {
         id: 3,
-        nombre: "Maicena",
+        nombre: "Alfajor Maicena",
         precio: 1200,
         descripcion: "Alfajor de maicena 6cm.",
         imagen: "https://via.placeholder.com/150",

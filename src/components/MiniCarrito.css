@@ -52,6 +52,7 @@
     right: 0;
     width: 280px;
     background: #ffffff;
+    color: #333333;
     border-radius: 12px;
     padding: 15px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
@@ -115,6 +116,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #333333;
 }
 
 .mini-carrito-btn:hover {
@@ -147,8 +149,8 @@
 /* Botón vaciar carrito */
 .mini-carrito-vaciar {
     width: 100%;
-    background: #ff3b3b;
-    color: white;
+    background: #e9e9e9;
+    color: #333333;
     border: none;
     padding: 10px;
     margin-top: 12px;
@@ -159,7 +161,7 @@
 }
 
 .mini-carrito-vaciar:hover {
-    background: #d52f2f;
+    background: #d3d3d3;
 }
 
 
@@ -195,8 +197,8 @@
     }
 }
 .mini-carrito-finalizar {
-    background: #ff7f50;
-    color: white;
+    background: #B988B8;
+    color: #ffffff;
     border: none;
     padding: 10px 14px;
     border-radius: 8px;
@@ -207,5 +209,5 @@
 }
 
 .mini-carrito-finalizar:hover {
-    background: #ff5c5c;
+    background: #a36a93;
 }

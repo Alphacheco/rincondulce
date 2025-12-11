@@ -1,5 +1,5 @@
 import React from "react";
-import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
+import {HashRouter as Router, Routes, Route, Link} from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import MiniCarrito from "./components/MiniCarrito.jsx";
 import Checkout from "./pages/Checkout.jsx";
